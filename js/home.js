@@ -10,6 +10,7 @@
 
     var summaries, selectedSummary, interval;
 
+    // Move to the next story, or, if we're at the end, the first story.
     function iterate() {
       var nextIndex = selectedSummary.data('storyIndex') + 1;
       if(nextIndex == summaries.length) {
@@ -18,20 +19,25 @@
       selectSummary(summaries.eq(nextIndex));
     }
 
+    // Select a story by its summary jQuery object
     function selectSummary(summary) {
       selectedSummary.removeClass('selected');
       selectedSummary = summary.addClass('selected');
     }
 
+    // Start the timed rotation
     function start() {
       interval = setInterval(iterate, DELAY);
     }
 
+    // Stop the timed rotation
     function stop() {
       clearInterval(interval);
       interval = null;
     }
 
+    // Set up the rotator, and start the timed rotation. This method need only
+    // be called once.
     this.initialize = function () {
       summaries = $('#storylist li').each(function (storyIndex) {
         // Cache the story's index, so we don't have to look it up on every
