@@ -6,7 +6,7 @@
   }
 
   var ROTATOR = new function Rotator () {
-    var DELAY = 500;
+    var DELAY = 5000;
 
     var summaries, selectedSummary, interval;
 
@@ -21,8 +21,13 @@
 
     // Select a story by its summary jQuery object
     function selectSummary(summary) {
+      // Deselect this summary and its preview
       selectedSummary.removeClass('selected');
+      selectedSummary.data('storyPreview').removeClass('selected');
+
+      // Select the new summary and its preview
       selectedSummary = summary.addClass('selected');
+      selectedSummary.data('storyPreview').addClass('selected');
     }
 
     // Start the timed rotation
@@ -39,10 +44,15 @@
     // Set up the rotator, and start the timed rotation. This method need only
     // be called once.
     this.initialize = function () {
+      var previews = $('#headline article');
+
       summaries = $('#storylist li').each(function (storyIndex) {
         // Cache the story's index, so we don't have to look it up on every
         // mouseover.
-        $(this).data('storyIndex', storyIndex);
+        $(this).data({
+          storyPreview: previews.eq(storyIndex),
+          storyIndex: storyIndex
+        });
       }).mouseover(function () {
         // If I'm hovering over a story, I don't want it to change on me.
         selectSummary($(this));
