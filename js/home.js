@@ -6,9 +6,7 @@
   }
 
   var ROTATOR = new function Rotator () {
-    var DELAY = 5000;
-
-    var summaries, selectedSummary, interval;
+    var summaries, selectedSummary, interval, delay;
 
     // Move to the next story, or, if we're at the end, the first story.
     function iterate() {
@@ -32,7 +30,7 @@
 
     // Start the timed rotation
     function start() {
-      interval = setInterval(iterate, DELAY);
+      interval = setInterval(iterate, delay);
     }
 
     // Stop the timed rotation
@@ -43,12 +41,17 @@
 
     // Set up the rotator, and start the timed rotation. This method need only
     // be called once.
-    this.initialize = function () {
-      var previews = $('#headline article');
+    this.initialize = function (options) {
+      // First thing first: let's process those options.
 
-      summaries = $('#storylist li').each(function (storyIndex) {
-        // Cache the story's index, so we don't have to look it up on every
-        // mouseover.
+      delay = options.delay;
+      summaries = $(options.summaries);
+      var previews = $(options.previews);
+
+      // Next, prep those summaries with their data and event triggers.
+      summaries.each(function (storyIndex) {
+        // Cache the story's index and preview, so we don't have to look it up
+        // on every iteration.
         $(this).data({
           storyPreview: previews.eq(storyIndex),
           storyIndex: storyIndex
@@ -65,10 +68,15 @@
       // Keep a record of which story is already marked as selected.
       selectedSummary = summaries.filter('.selected');
 
+      // Start the timed rotation.
       start();
     }
   };
 
-  ROTATOR.initialize();
+  ROTATOR.initialize({
+    delay: 5000,
+    previews: '#headline article',
+    summaries: '#storylist li'
+  });
 })();
 
