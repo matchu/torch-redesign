@@ -122,12 +122,15 @@ nav {
 				max-width: 390px;
 				margin-right: 10px;
 			}
-			#headline article * {
+			#headline p {
 				margin-top: 10px;
 				line-height: 1.3;
 			}
-			#headline article *:first-child {
-				margin-top: 0;
+			#headline article {
+			  display: none;
+			}
+			#headline article.selected {
+			  display: block;
 			}
 		#storylist {
 			height: 315px;
@@ -145,7 +148,7 @@ nav {
 				background-color: #ccc;
 			}
 			#storylist ul li:last-child {
-				border-bottom: none;	
+				border-bottom: none;
 			}
 				#storylist ul li div.teaser {
 					width: 270px;
@@ -239,7 +242,7 @@ nav {
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
-		
+
 	}
 
 }
@@ -249,7 +252,7 @@ nav {
 /* ! Provide higher res assets for iPhone 4   */
 /* ========================================== */
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
 /*	.logo {
 		background: url(logo2x.jpg) no-repeat;
@@ -257,3 +260,4 @@ nav {
 	}*/
 
 }
+
