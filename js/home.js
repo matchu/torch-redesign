@@ -21,17 +21,6 @@ var ROTATOR = new function Rotator () {
     selectedSummary.data('storyPreview').addClass('selected');
   }
 
-  // Start the timed rotation
-  function start() {
-    interval = setInterval(iterate, delay);
-  }
-
-  // Stop the timed rotation
-  function stop() {
-    clearInterval(interval);
-    interval = null;
-  }
-
   // Set up the rotator, and start the timed rotation. This method need only
   // be called once.
   this.initialize = function (options) {
@@ -52,17 +41,25 @@ var ROTATOR = new function Rotator () {
     }).mouseover(function () {
       // If I'm hovering over a story, I don't want it to change on me.
       selectSummary($(this));
-      stop();
+      ROTATOR.stop();
     }).mouseout(function () {
       // Once I stop hovering, change all you like.
-      start();
+      ROTATOR.start();
     });
 
     // Keep a record of which story is already marked as selected.
     selectedSummary = summaries.filter('.selected');
+  }
 
-    // Start the timed rotation.
-    start();
+  // Start the timed rotation
+  this.start = function () {
+    interval = setInterval(iterate, delay);
+  }
+
+  // Stop the timed rotation
+  this.stop = function () {
+    clearInterval(interval);
+    interval = null;
   }
 };
 
@@ -71,4 +68,6 @@ ROTATOR.initialize({
   previews: '#headline article',
   summaries: '#storylist li'
 });
+
+ROTATOR.start();
 
