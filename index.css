@@ -1,0 +1,35 @@
+body {
+	background: #ffffff;
+	font-family:Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+	color: #111;
+	text-rendering: optimizeLegibility;
+}
+/*a:link, a:visited { color: #ccc; text-decoration: none; }
+a:hover { color: #ccc; text-decoration: underline;}
+a:active { color: #ccc; }*/
+a {
+	color: #600;
+}
+#wrapper {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	width: 200px;
+	float: left;
+}
+	header{
+		position: fixed;
+	}
+	header h1 {
+		color: #111;
+		text-decoration: none;
+		font-size: 42px;
+		font-stretch: condensed;
+		font-weight: bold;
+	}
+#content {
+	width: 800px;
+	float: right;
+}

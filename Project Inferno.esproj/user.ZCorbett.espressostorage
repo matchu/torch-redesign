@@ -34,10 +34,8 @@
 			<dict>
 				<key>StateType</key>
 				<string>PreviewTab</string>
-				<key>Title</key>
-				<string>Inferno</string>
 				<key>URL</key>
-				<string>file:///Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index.html#</string>
+				<string>file:///Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index.html</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
@@ -47,13 +45,13 @@
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/css/styles.css</string>
+				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index.css</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/README</string>
+				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/reset.css</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
