@@ -65,7 +65,7 @@ var ROTATOR = new function Rotator () {
 
 ROTATOR.initialize({
   delay: 5000,
-  previews: '#headline article',
+  previews: '#featuredstories li',
   summaries: '#storylist li'
 });
 
