@@ -52,6 +52,9 @@ p {
 		#nav li:hover {
 			background-color: #ddd;
 		}
+		#nav li.nohover:hover {
+			background-color: #fff;
+		}
 	#nav li a {
 		color: #050505;
 		text-decoration: none;
@@ -60,6 +63,27 @@ p {
 	}
 		#nav li.current a {
 			color: #fff;
+		}
+		#searchbox {
+			outline: none;
+			border: 1px solid #050505;
+			padding: 5px;
+			margin: 0;
+			float: left;
+		}
+			#searchbox:focus {
+				border-color: #600;
+			}
+		#searchsubmit{
+			width: 36px;
+			margin: 0;
+			padding: 0;
+			border-width: 1px 1px 1px 0;
+			border-color: #050505;
+			border-style: 1px;
+			padding: 5px 0;
+			float: left;
+			background-color: #fff;
 		}
 	#ad {
 		position: absolute;
@@ -134,7 +158,7 @@ p {
 			border-bottom: none;
 		}
 			#storylist ul li div.teaser {
-				width: 270px;
+				width: 309px;
 				float: right;
 				height: 68px;
 				overflow-y: hidden;
@@ -149,7 +173,7 @@ p {
 					margin-right: 10px;
 				}
 	#main {
-		margin-top: 15px;
+		margin: 15px 0;
 		height: 100%;
 	}
 		#mainborder {
@@ -160,18 +184,32 @@ p {
 			margin-bottom: 15px;
 			background-color: #050505;
 		}
+		#main #columnwrapper {
+			position: relative;
+			height: auto;
+			float: none;
+			display: block;
+		}
 		#main .column {
 			width: 380px;
-			float: left;
-			height: 100%;
+			height: auto;
 			line-height: 1.3;
+			margin-bottom: 15px;
+			float: left;
 		}
 		#main .column.last {
 			margin-left: 20px;
 		}
 			#main .column ul li {
-				margin-bottom: 15px;
+				margin-bottom: 8px;
+				padding-bottom: 8px;
+				border-bottom: 1px solid #ddd;
 			}
+				#main .column ul li:last-child {
+					border-bottom: none;
+					margin: 0;
+					padding: 0;
+				}
 				#main .column .date {
 					font-size: 12px;
 					color: #777;
@@ -187,4 +225,15 @@ p {
 						font-size: 12px;
 						color: #777;
 					}
-	
+	#foot {
+		position: relative;
+		left: -20px;
+		width: 780px;
+		padding: 10px 0 10px 20px;
+		background-color: #050505;
+		color: #fff;
+		clear: both;
+	}
+		#foot h6 {
+			margin-bottom: 15px;
+		}
