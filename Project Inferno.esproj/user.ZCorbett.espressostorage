@@ -7,22 +7,21 @@
 	<key>ESProjectWindowState</key>
 	<dict>
 		<key>ContentSize</key>
-		<string>{960, 709}</string>
+		<string>{2048, 960}</string>
 		<key>ProjectURL</key>
 		<string>file://localhost/Users/ZCorbett/Dropbox/html:css/Project%20Inferno/Project%20Inferno.esproj/</string>
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{0, 878}</string>
+		<string>{0, 1130}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
-	<true/>
+	<false/>
 	<key>com.macrabbit.Espresso.FileManager.FileControllerState</key>
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
-			<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/css</string>
-			<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/images</string>
+			<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
