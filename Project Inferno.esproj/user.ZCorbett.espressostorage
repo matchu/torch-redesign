@@ -21,11 +21,12 @@
 	<dict>
 		<key>ExpandedURLs</key>
 		<array>
-			<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno</string>
+			<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/js</string>
+			<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/v1/css</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
-	<false/>
+	<true/>
 	<key>com.macrabbit.Espresso.Workspace.Tabs</key>
 	<dict>
 		<key>Tabs</key>
