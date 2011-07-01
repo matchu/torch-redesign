@@ -1,3 +1,5 @@
+// Include this file at the end of the <body>.
+
 var ROTATOR = new function Rotator () {
   var summaries, selectedSummary, interval, delay;
 
