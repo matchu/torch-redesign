@@ -5,13 +5,28 @@
 		<title>The Pine View Torch</title>
 		<link rel="stylesheet" type="text/css" href="reset.css" />
 		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script src="js/jquery.js"></script>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
 		<script src="js/home.js"></script>
+		<script src="konami.js"></script>
+		<script>
+			var konami = new Konami();
+			konami.code = function() {
+				$('.big').text("Blaze");
+				$.cookie
+			}
+			konami.load()
+		</script>
+		<script>
+			if(readCookie('blaze')) {
+				$('.big').text("Blaze");
+			}
+		</script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<header id="header">
 				<h1><span class="small">The</span><br/><span class="big">Torch</span></h1>
+				<h6 class="weather">Currently: 97°, Sunny</h6>
 				<nav id="nav">
 					<ul>
 						<li class="current">

@@ -40,6 +40,12 @@ p {
 			font-size: 62px;
 			color: #91090a;
 		}
+	.weather {
+		padding-bottom: 10px;
+		font-size: 11px;
+		font-weight: bolder;
+		font-stretch: normal;
+	}
 	#nav li {
 		padding: 5px 0;
 		-webkit-transition: all 0.5s ease;
