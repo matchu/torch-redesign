@@ -46,9 +46,11 @@ p {
 		font-weight: bolder;
 		font-stretch: normal;
 	}
-	#nav li {
+	#nav li a{
 		padding: 5px 0;
+		display: block;
 		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
 		font-size: 15px;
 		line-height: 14px;
 	}
@@ -130,6 +132,8 @@ p {
 	}
 		#featured ul#featuredstories li {
 			display: none;
+			-webkit-transition: all .6s ease;
+			-moz-transition: all .6s ease;
 		}
 		 #featured ul#featuredstories li.selected {
 			display: block;
