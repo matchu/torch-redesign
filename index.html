@@ -5,25 +5,17 @@
 		<title>The Pine View Torch</title>
 		<link rel="stylesheet" type="text/css" href="reset.css" />
 		<link rel="stylesheet" type="text/css" href="index.css" />
-<<<<<<< HEAD
 		<script src="http://code.jquery.com/jquery.min.js"></script>
-		<script src="js/home.js"></script>
-		<script src="konami.js"></script>
+		<script src="js/konami.js"></script>
 		<script>
 			var konami = new Konami();
 			konami.code = function() {
 				$('.big').text("Blaze");
-				$.cookie
+				$('title').text("The Pine View Blaze");
+				$('#copyrighttorch').text("Blaze");
 			}
 			konami.load()
 		</script>
-		<script>
-			if(readCookie('blaze')) {
-				$('.big').text("Blaze");
-			}
-		</script>
-=======
->>>>>>> 4937fe86b84e028091d97a20252ee7d52a0d3822
 	</head>
 	<body>
 		<div id="wrapper">
@@ -140,7 +132,7 @@
 					</div>
 				</section>
 				<footer id="foot">
-					<h6>All content, unless otherwise noted, is the property of the Pine View Torch © 2011</h6>
+					<h6>All content, unless otherwise noted, is the property of the Pine View <span id="copyrighttorch">Torch</span> © 2011</h6>
 					<aside id="login">
 						<h5>Are you a staff member?</h5>
 						<a href="login">Login</a>
