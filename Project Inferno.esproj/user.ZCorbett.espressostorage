@@ -13,7 +13,12 @@
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{0, 1130}</string>
+		<string>{-1, 1130}</string>
+	</dict>
+	<key>com.macrabbit.Espresso.FileBrowser.Configuration</key>
+	<dict>
+		<key>ExpandedItems</key>
+		<array/>
 	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
@@ -34,18 +39,14 @@
 			<dict>
 				<key>StateType</key>
 				<string>PreviewTab</string>
+				<key>Title</key>
+				<string>The Pine View Torch</string>
 				<key>URL</key>
 				<string>file:///Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index.html</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
 				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index2.css</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
