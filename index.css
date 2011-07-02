@@ -134,26 +134,36 @@ p {
 	}
 		#featured ul#featuredstories li {
 			display: none;
+			text-shadow: 1px 1px 0 #fff;
 			-webkit-transition: all .6s ease;
 			-moz-transition: all .6s ease;
 		}
 		 #featured ul#featuredstories li.selected {
 			display: block;
+			height: 272px;
+			overflow: hidden;
+			position: relative;
 		}
 		#featuredstories h2 {
 			font-weight: bold;
 			font-size: 42px;
 			margin-bottom: 10px;
 		}
-		#featuredstories .headlinerimg {
+		#featuredstories img {
 			float: left;
-			max-height: 300px;
-			max-width: 300px;
+			max-height: 190px;
+			max-width: 3330px;
 			padding: 5px;
-			margin: 0 5px 5px 0px;
+			margin: 0 5px 0 0;
 			background-color: #eee;
 			border: 1px soild #ddd;
-			
+		}
+		#featuredstories .jump {
+			position: absolute;
+			bottom: 0px;
+			background-color: #fff;
+			width: 100%;
+			text-align: right;
 		}
 	#storylist {
 		margin: 15px 0;
