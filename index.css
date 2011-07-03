@@ -1,3 +1,7 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 body {
 	background: #ffffff;
 	font-family:'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
@@ -273,3 +277,4 @@ p {
 		#foot h6 {
 			margin-bottom: 15px;
 		}
+
