@@ -71,5 +71,8 @@ ROTATOR.initialize({
   summaries: '#storylist li'
 });
 
-ROTATOR.start();
+// Appending ?norotate to the URL will disable rotation
+if(document.location.search.indexOf('norotate') == -1) {
+  ROTATOR.start();
+}
 
