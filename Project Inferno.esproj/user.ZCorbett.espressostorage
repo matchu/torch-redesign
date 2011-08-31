@@ -7,13 +7,13 @@
 	<key>ESProjectWindowState</key>
 	<dict>
 		<key>ContentSize</key>
-		<string>{2048, 960}</string>
+		<string>{1024, 960}</string>
 		<key>ProjectURL</key>
 		<string>file://localhost/Users/ZCorbett/Dropbox/html:css/Project%20Inferno/Project%20Inferno.esproj/</string>
 		<key>StateType</key>
 		<string>ProjectWindow</string>
 		<key>TopLeftPoint</key>
-		<string>{-1, 1130}</string>
+		<string>{0, 1130}</string>
 	</dict>
 	<key>com.macrabbit.Espresso.FileBrowser.Configuration</key>
 	<dict>
@@ -36,26 +36,6 @@
 	<dict>
 		<key>Tabs</key>
 		<array>
-			<dict>
-				<key>StateType</key>
-				<string>PreviewTab</string>
-				<key>Title</key>
-				<string>The Pine View Torch</string>
-				<key>URL</key>
-				<string>file:///Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index.html</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/index.css</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
 			<dict>
 				<key>DocumentURL</key>
 				<string>file://localhost/Users/ZCorbett/Dropbox/html%3acss/Project%20Inferno/js/home.js</string>
