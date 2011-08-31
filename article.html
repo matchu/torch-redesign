@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Video Games: Art form, not time-waster</title>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="js/konami.js"></script>
+		<script>
+			var konami = new Konami();
+			konami.code = function() {
+				$('.blaze').text("Blaze");
+				$('title').text("The Pine View Blaze");
+				$('.animal').css('display','inline');
+			}
+			konami.load()
+		</script>
+	</head>
+	<body>
+		<div id="wrapper" class="storypage">
+			<header id="header">
+				<div class="info">
+					<h1><span class="small">The<br/><span class="big blaze">Torch</h1>
+					<div id="divider"></div>
+					<h6 class="infostuff news">October 1, 2011</h6>
+					<h6 class="infostuff weather">Currently: 97°, Sunny</h6>
+					<aside id="readonline">
+						<a href="#">
+							<h2>Read Online</h2>
+							<p>Want to read the full Torch newspaper online? Click here.</p>
+						</a>
+					</aside>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li class="">
+							<a href="#">News</a>
+						</li>
+						<li>
+							<a href="#">Student Life</a>
+						</li>
+						<li class="hover">
+							<a href="#">Entertainment</a>
+							<ul>
+								<li><a href="#">Music</a></li>
+								<li><a href="#">Movies</a></li>
+								<li><a href="#">Books</a></li>
+								<li><a href="#">Food</a></li>
+								<li><a href="#">Other</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Humor</a>
+						</li>
+						<li>
+							<a href="#">Features</a>
+						</li>
+						<li>
+							<a href="#">Opinion</a>
+						</li>
+						<li>
+							<a href="#">Sports</a>
+						</li>
+						<li>
+							<a href="#">Focus</a>
+						</li>
+						<li>
+							<a href="#">Games</a>
+						</li>
+						<li class="nohover lastnavitem">
+							<form method="get" action="search">
+								<input type="text" name="q" id="searchbox" placeholder="Search…" />
+								<input type="submit" name="submit" id="searchsubmit" value="Go" />
+							</form>
+						</li>
+					</ul>
+				</nav>
+				<aside id="ad">
+					<img src="images/ad.png" /><p id="adtext">QuoteRobot. Create quotes. Win projects. Save hours and make more money.</p><p id="powered">ADS by INFERNO</p>
+				</aside>
+			</header>
+			<section id="content">
+				<article class="story">
+					<h2>Video Games: Art form, not time-waster</h2>
+					<h3 class="author">By <a href="#">Dan Bateyko</a></h3>
+					<p><img src="images/story.jpg" alt="Video Game" />Being a voracious reader, I had felt guilt while gazing at my shelf of Virginia Woolf that remained unexplored in lieu of learning a new spell for my level 14 arch-mage in <em>Oblivion</em>. However upon further reflection and a need to justify my actions, I have begun approaching video games from a new perspective. Our appreciation for video games as an artistic medium should not be tempered by cultural prejudice.</p>
+					<p>&nbsp;</p>
+					<p><span style="letter-spacing: 0.0px;" class=" pinpointTarget">The most intriguing aspect of video games is that the audience not only experiences the narrative, but also shapes it.&nbsp;Tom Bissell,<em> </em>journalist and literary critic expands on this in his 2010 work,&nbsp;<a href="http://en.wikipedia.org/wiki/Extra_Lives:_Why_Video_Games_Matter"><span style="text-decoration: underline;">Extra Lives</a><em>.&nbsp;</em>Bissell touches on how in a film or novel, the reader becomes an altogether separate entity from the work, and surrenders all control over the experience. The only level of interaction for such mediums is turning off the TV or setting the book aside. Video games represent a departure from this traditional storytelling, in which the audience is not only being told a story, <em>but creating one</em>. The framework for a Tom Clancy-esque story is built into the game Just Cause 2, but I can fully ignore that and jump out of a helicopter into a sports car instead. This fundamentally alters the typical construct of how a narrative is delivered. Even more importantly, it's pretty fun.</p>
+					<p>&nbsp;</p>
+					<p>Another aspect to consider is the role of passive storytelling. While trekking through the fields of Cyrodill, my favorite hobby by far is picking mushrooms. Somehow, in an altogether subliminal manner, I have picked up on some mycology and can identify <em>Amanita muscaria</em> by sight. Where movies and books are limited in what narrative they can project, this is not applicable to games. Two players could run through the Valve game Portal 2 with different narratives being told to each; for instance, they could encounter such storytelling devices as the scattered Lascauxian drawings of the resident schizophrenic or portal jump into a distant, yet undiscovered chamber. There are no run times or page lengths that shorten the storytelling capability of a video game.</p>
+					<p>&nbsp;</p>
+					<p>Far from puerile, video games represent a new and different medium of storytelling, but not a lesser one. It is true that there remain aspects to video games that simply have yet to be comparable to other mediums. The point is not to make an assessment of which medium of storytelling is better, like two children bickering over their favorite Power Ranger. Rather, video games should be recognized as a new and innovative form of the timeless art of storytelling, a form that allows for endless creativity and exploration.</p>
+				</article>
+			</section>
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/home.js"></script>
+	</body>
+</html>
+
