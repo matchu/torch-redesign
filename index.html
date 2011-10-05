@@ -16,13 +16,20 @@
 			}
 			konami.load()
 		</script>
+		
+		<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+		
 	</head>
 	<body>
 		<div id="wrapper">
+			<div id="navwrapper">
 			<header id="header">
 				<div class="info">
-					<h1><span class="small">The</span><br/><span class="big blaze">Torch</span></h1>
-					<div id="divider"></div>
+					<h1><a href="/torch/"><span class="small">The</span><br/><span class="big blaze">Torch</span></a></h1>
+				</div>
+				<nav id="nav">
 					<h6 class="infostuff news">October 1, 2011</h6>
 					<h6 class="infostuff weather">Currently: 97°, Sunny</h6>
 					<aside id="readonline">
@@ -31,8 +38,6 @@
 							<p>Want to read the full Torch newspaper online? Click here.</p>
 						</a>
 					</aside>
-				</div>
-				<nav id="nav">
 					<ul>
 						<li class="">
 							<a href="#">News</a>
@@ -43,10 +48,10 @@
 						<li class="hover">
 							<a href="#">Entertainment</a>
 							<ul>
-								<li><a href="#">Music</a></li>
-								<li><a href="#">Movies</a></li>
-								<li><a href="#">Books</a></li>
-								<li><a href="#">Food</a></li>
+								<li><a href="#" class="music image">Music</a></li>
+								<li><a href="#" class="movies image">Movies</a></li>
+								<li><a href="#" class="books image">Books</a></li>
+								<li><a href="#" class="food image">Food</a></li>
 								<li><a href="#">Other</a></li>
 							</ul>
 						</li>
@@ -66,10 +71,10 @@
 							<a href="#">Focus</a>
 						</li>
 						<li>
-							<a href="#">Games</a>
+							<a href="games.html">Games</a>
 						</li>
 						<li class="nohover lastnavitem">
-							<form method="get" action="search">
+							<form method="get" action="search.html">
 								<input type="text" name="q" id="searchbox" placeholder="Search…" />
 								<input type="submit" name="submit" id="searchsubmit" value="Go" />
 							</form>
@@ -79,9 +84,10 @@
 				<aside id="ad">
 					<img src="images/ad.png" /><p id="adtext">QuoteRobot. Create quotes. Win projects. Save hours and make more money.</p><p id="powered">ADS by INFERNO</p>
 				</aside>
+				</div>
 			</header>
 			<section id="content">
-				<div id="alert" class="line"><h3>RSVP for Colbalt now!</h3></div>
+				<div id="alert" class="line"><h3>Welcome to the new PVTorch.com</h3></div>
 				<section id="featured">
 					<ul id="featuredstories">
 						<li class="selected">
@@ -90,7 +96,7 @@
 								<h2>All Your Login Are Belong To Pine View</h2>
 								<img src="images/headliner.png" class="headlinerimg"/>
 								<p>Today the Pine View Association announced that they would save every username and password students use to login to websites via the public school internet. This announcement comes after the PVA decided to intrude on student privacy so students would be less worried about having any privacy. The PVA consulted with world-renowned phycologist Dr. Phil who told them "When students have no expectation of privacy, you can never violate their privacy." The PVA was swift in enacting this policy, claiming that they wanted students to feel free from secrets. There isn't any word yet from the PVA as to what they'll do with your logins, but its safe to assume they won't keep them in an unsecured  online database, right?</p>
-								<div class="fade"></div><p class="jump"><a href="#">Read more after the jump →</a></p>
+								<div class="fade"></div><p class="jump"><a href="article.html">Read more →</a></p>
 							</article>
 						</li>
 						<li>
@@ -98,7 +104,7 @@
 							  <h2>Aardvarks: Underrated</h2>
 								<img src="images/aardvark.jpg" class="headlinerimg"/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet consectetur faucibus. Donec non libero et neque vestibulum luctus sit amet vel mauris. Aenean pretium diam eu felis congue sit amet volutpat neque congue. Cras sit amet metus tellus. Proin posuere auctor lacus ut euismod. Proin quis odio nunc, sed tempus ligula. Donec sed eros odio, nec blandit felis. Donec non dui lectus, vel hendrerit neque. Morbi id lorem nec lorem ullamcorper sollicitudin eu et massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi sit amet leo non turpis aliquet varius non eget risus. Cras placerat, nunc a cursus imperdiet, est lacus convallis odio, ut molestie orci nibh non nunc. Duis scelerisque porta elit, non condimentum dolor condimentum et. Donec at orci sed velit blandit ornare sit amet in enim.</p>
-								<div class="fade"></div><p class="jump"><a href="#">Read more after the jump →</a></p>
+								<div class="fade"></div><p class="jump"><a href="article.html">Read more →</a></p>
 							</article>
 						</li>
 						<li>
@@ -106,7 +112,7 @@
 							  <h2>Iron Chef comes to Pine View</h2>
 								<img src="images/iron-chef.jpg" class="headlinerimg"/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet consectetur faucibus. Donec non libero et neque vestibulum luctus sit amet vel mauris. Aenean pretium diam eu felis congue sit amet volutpat neque congue. Cras sit amet metus tellus. Proin posuere auctor lacus ut euismod. Proin quis odio nunc, sed tempus ligula. Donec sed eros odio, nec blandit felis. Donec non dui lectus, vel hendrerit neque. Morbi id lorem nec lorem ullamcorper sollicitudin eu et massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi sit amet leo non turpis aliquet varius non eget risus. Cras placerat, nunc a cursus imperdiet, est lacus convallis odio, ut molestie orci nibh non nunc. Duis scelerisque porta elit, non condimentum dolor condimentum et. Donec at orci sed velit blandit ornare sit amet in enim.</p>
-								<div class="fade"></div><p class="jump"><a href="#">Read more after the jump →</a></p>
+								<div class="fade"></div><p class="jump"><a href="article.html">Read more →</a></p>
 							</article>
 						</li>
 						<li>
@@ -114,7 +120,7 @@
 							  <h2>Lord of the Flies: book or more?</h2>
 								<img src="images/lotf.jpg" class="headlinerimg"/>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet consectetur faucibus. Donec non libero et neque vestibulum luctus sit amet vel mauris. Aenean pretium diam eu felis congue sit amet volutpat neque congue. Cras sit amet metus tellus. Proin posuere auctor lacus ut euismod. Proin quis odio nunc, sed tempus ligula. Donec sed eros odio, nec blandit felis. Donec non dui lectus, vel hendrerit neque. Morbi id lorem nec lorem ullamcorper sollicitudin eu et massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi sit amet leo non turpis aliquet varius non eget risus. Cras placerat, nunc a cursus imperdiet, est lacus convallis odio, ut molestie orci nibh non nunc. Duis scelerisque porta elit, non condimentum dolor condimentum et. Donec at orci sed velit blandit ornare sit amet in enim.</p>
-								<div class="fade"></div><p class="jump"><a href="#">Read more after the jump →</a></p>
+								<div class="fade"></div><p class="jump"><a href="article.html">Read more →</a></p>
 							</article>
 						</li>
 					</ul>
@@ -127,23 +133,21 @@
 						</ul>
 					</div>
 				</section>
-				<section id="promo">
-					<div class="line mainborder"><!--Nothing to see here, mozy along.--></div>
-					<article>
-						<h2>Did you know that in the promotional area I'm going to give you the secret to The Blaze?</h2>
-						<p>Well, now you do. It's totally top secret and all so don't share, but pressing "↑ ↑ ↓ ↓ ← → ← → B A Enter" might to something snazzy. Maybe you should try it for yourself…</p>
-						<p>Corned beef pork loin meatloaf spare ribs shoulder. Venison pork chop pastrami, ribeye sausage shank jowl ham shankle strip steak t-bone salami. Sausage ham t-bone shankle ham hock, pig sirloin hamburger corned beef jerky pork loin pork belly shank drumstick. Pork loin sirloin pork meatball pig. Short ribs pork chuck, jowl tenderloin jerky pig salami short loin beef ribs drumstick t-bone meatball turkey. Boudin rump beef ribs pastrami, ham hock tail ball tip chicken pig brisket. Pork belly salami t-bone venison corned beef pork loin, jerky sirloin short ribs jowl andouille biltong.</p>
-					</article>
-				</section>
 				<section id="main">
 					<div class="line mainborder"><!--Nothing to see here, mozy along.--></div>
 					<div id="columnwrapper">
-						<ul>
+						<ul id="articleselect">
+							<li class="selected">Most Popular</li>
+							<li>Most Recent</li>
+							<li>From the Torch</li>
+						</ul>
+						<div>
+						<ul class="recent list">
 							<li>
 								<div class="articleinfo">
-									<h3>
+									<h3><a href="article.html">
 										Google Gathers Gallons of News: A Review
-									</h3>
+									</a></h3>
 									<h5>by Zackary Corbett<span class="animal">: Meercat</span></h5>
 								</div>
 								<p>For those who find themselves constantly looking for the next juicy tidbit of news, searching through blog after blog for that one interesting new story…</p>
@@ -151,7 +155,7 @@
 							</li>
 							<li>
 								<div class="articleinfo">
-									<h3>Cast shines in "Superstar:" A Review</h3>
+									<h3><a href="article.html">Cast shines in "Superstar:" A Review</a></h3>
 									<h5>by Katie Dunn-Rankin<span class="animal">: Jack Russell Puppy/Small Child</span></h5>
 								</div>
 								<p>As the curtain rises, angry priests dressed in all black meet to discuss the threat of Jesus of Nazareth to the Jewish people. They sing in low…</p>
@@ -159,7 +163,7 @@
 							</li>
 							<li>
 								<div class="articleinfo">
-									<h3>In The News<span class="hot">Popular Story</span></h3>
+									<h3><a href="article.html">In The News</a></h3>
 									<h5>by Anna Beatty<span class="animal">: American Shorthair</span></h5>
 								</div>
 								<p>The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…</p>
@@ -167,7 +171,7 @@
 							</li>
 							<li>
 								<div class="articleinfo">
-									<h3>Beyond the...Badge: Patrick Bassett</h3>
+									<h3><a href="article.html">Beyond the...Badge: Patrick Bassett</a></h3>
 									<h5>by Sanchita Mukherjee<span class="animal">: Tigress</span></h5>
 								</div>
 								<p>During the day, Pine View is home to over 2,000 people. But after students, teachers, administrators, and other staff members leave campus, Pine View's…</p>
@@ -175,7 +179,7 @@
 							</li>
 							<li>
 								<div class="articleinfo">
-									<h3>Beyond the...Golf Cart: James Hawkins</h3>
+									<h3><a href="article.html">Beyond the...Golf Cart: James Hawkins</a></h3>
 									<h5>by Daysi Gomez<span class="animal">: Pansy</span></h5>
 								</div>
 								<p>To some students, James Hawkins is simply one of the many aides on campus who help make Pine View run like clockwork. To others, he is the guy in…</p>
@@ -183,13 +187,14 @@
 							</li>
 							<li>
 								<div class="articleinfo">
-									<h3>Teams tie in Tie vs. Tie-Dye tug-of-war</h3>
+									<h3><a href="article.html">Teams tie in Tie vs. Tie-Dye tug-of-war</a></h3>
 									<h5>by John Schweig<span class="animal">: Three-Toed Sloth</span></h5>
 								</div>
 								<p>As they ritually broke with their past on the annual Senior Day Friday, the Class of 2011 literally broke the tug-of-war rope and achieved a first…</p>
 								<span class="date">Published May 27, 2011</span>
 							</li>
 						</ul>
+						</div>
 					</div>
 				</section>
 				<footer id="foot">
@@ -201,8 +206,8 @@
 				</footer>
 			</section>
 		</div>
-		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/home.js"></script>
+		<script type="text/javascript" src="js/jquery.animate-enhanced.min.js"></script>
 	</body>
 </html>
 

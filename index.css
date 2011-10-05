@@ -16,11 +16,11 @@ p {
 }
 #wrapper {
 	position: relative;
-	width: 1000px;
+	width: 988px;
 	margin: 0 auto;
-}
-#wrapper {
-	width: 800px;
+	margin-top: 0;
+	padding-top: 0;
+	top: 0;
 }
 #header {
 	position: fixed;
@@ -31,13 +31,18 @@ p {
 	min-height:750px;
 	height: 100%;
 	border-right: 12px solid #050505;
+	z-index: -9999;
 }
 	#header h1 {
 		padding-top: 5px;
 		margin-bottom: 5px;
 	}
+		#header h1 a{
+			text-decoration: none;
+		}
 		#header h1 .small {
 			font-size: 14px;
+			color: #050505;
 		}
 		#header h1 .big {
 			font-size: 62px;
@@ -55,7 +60,7 @@ p {
 	}
 		#header #readonline a {
 			color: #fff;
-			background-color: #050505;
+			background-color: #656565;
 			display: block;
 			text-decoration: none;
 			-webkit-transition: all 0.3s ease;
@@ -64,7 +69,7 @@ p {
 			font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
 		}
 			#header #readonline a:hover {
-				color: #8699c2;
+				background-color: #465e99;
 			}
 			#header #readonline a h2 {
 				font-size: 24px;
@@ -83,6 +88,9 @@ p {
 	}
 	.weather {
 		padding-bottom: 10px;
+	}
+	#nav {
+		overflow-y: scroll;
 	}
 	#nav li {
 		-webkit-transition: all 0.3s ease;
@@ -133,6 +141,7 @@ p {
 		display: block;
 		font-size: 15px;
 		line-height: 14px;
+		font-family:'Myraid Pro', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
 	}
 		#nav li.current a {
 			color: #fff;
@@ -178,24 +187,28 @@ p {
 #content {
 	width: 796px;
 	float: right;
+	z-index: 9999;
+	background-color: #fff;
 }
 #wrapper.storypage #content {
-	width: 596px;
-	float: right;
+	width: 598px;
+	float: left;
+	margin-left: 204px;
 }
 #alert {
 		color: #fff;
 		background-color: #465e99;
-		padding: 5px 0 5px 20px;
+		padding: 5px 0 5px 12px;
 		font-stretch: condensed;
 		font-weight: bold;
 		position: relative;
-		left: -12px;
-		width: 788px;
+		width: 780px;
 		height: 20px;
 	}
 	#featured {
 		margin-top: 12px;
+		margin-left: 12px;
+		width: 780px;
 	}
 		#featured ul#featuredstories li {
 			display: none;
@@ -204,7 +217,7 @@ p {
 		}
 		 #featured ul#featuredstories li.selected {
 			display: block;
-			height: 272px;
+			height: 320px;
 			overflow: hidden;
 			position: relative;
 		}
@@ -215,7 +228,7 @@ p {
 		}
 		#featuredstories img {
 			float: left;
-			max-height: 180px;
+			max-height: 230px;
 			max-width: 330px;
 			padding: 5px;
 			margin: 0 5px 0 0;
@@ -254,7 +267,7 @@ p {
 	}
 		#storylist ul li {
 			cursor: pointer;
-			background-color: #c0c9dc;
+			background-color: #d8dde8;
 			height: 68px;
 			padding: 5px;
 			width: 380px;
@@ -308,57 +321,87 @@ p {
 		}
 	#main {
 		margin-top: 20px;
+		margin-left: 12px;
 		height: 100%;
 	}
 		.mainborder {
 			background-color: #050505;
 			position: relative;
 			left: -12px;
-			width: 808px;
+			width: 792px;
 			height: 15px;
 			margin-bottom: 20px;
 		}
+		#main #articleselect {
+			color: #fff;
+			background-color: #465e99;
+			font-stretch: condensed;
+			font-weight: bold;
+			height: 18px;
+			padding: 4px 0;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+			#main #articleselect li {
+				display: inline-block;
+				padding-right: 10px;
+				margin-right: 5px;
+				border-right: 1px solid #fff;
+				line-height: 1;
+				padding-bottom: 2px;
+			}
+				#main #articleselect li:last-of-type {
+					padding-right: 0;
+					margin-right: 0;
+					border-right: none;
+				}
+			#main #articleselect li.selected {
+				color: #d8dde8;
+			}
 		#main #columnwrapper {
 			position: relative;
 			height: auto;
 			float: none;
 			display: block;
 		}
-		#main #columnwrapper ul li {
+		#main #columnwrapper ul.list li {
 			width: 380px;
 			height: auto;
 			line-height: 1.3;
 			margin-bottom: 20px;
 			float: left;
 		}
-		#main #columnwrapper ul li:nth-of-type(even) {
+		#main #columnwrapper ul.list li:nth-of-type(even) {
 			margin-left: 20px;
 		}
-			#main #columnwrapper ul li ul li {
+			#main #columnwrapper ul.list li ul li {
 				margin-bottom: 8px;
 				padding-bottom: 8px;
 				border-bottom: 1px solid #ddd;
 			}
-				#main .animal {
+				 .animal {
 					display: none;
 				}
-				#main #columnwrapper ul li ul li:last-child {
+				#main #columnwrapper ul.list li ul li:last-child {
 					border-bottom: none;
 					margin: 0;
 					padding: 0;
 				}
-				#main #columnwrapper ul li .date {
+				#main #columnwrapper ul.list li .date {
 					font-size: 12px;
 					color: #777;
 					margin-top: 10px;
 				}
-				#main #columnwrapper ul li .articleinfo {
+				#main #columnwrapper ul.list li .articleinfo {
 					margin-bottom: 5px;
 				}
-					#main #columnwrapper ul li .articleinfo h3 {
+					#main #columnwrapper ul.list li .articleinfo h3 {
 						font-size: 18px;
 					}
-						#main #columnwrapper ul li .articleinfo h3 .hot {
+					#main #columnwrapper ul.list li .articleinfo h3 a {
+						text-decoration: none;
+					}
+						#main #columnwrapper ul.list li .articleinfo h3 .hot {
 							color: #fff;
 							background-color: #465e99;
 							padding: 4px;
@@ -367,7 +410,7 @@ p {
 							text-transform: uppercase;
 							font-weight: bold;
 						}
-					#main #columnwrapper ul li .articleinfo h5 {
+					#main #columnwrapper ul.list li .articleinfo h5 {
 						font-size: 12px;
 						color: #777;
 					}
@@ -388,6 +431,12 @@ p {
 			font-style: italic;
 			font-family: Georgia, 'Times New Roman', Times, sans-serif;
 		}
+		#content .story p {
+			margin-bottom: 16px;
+		}
+		#content .story p:last-of-type {
+			margin-bottom: 12px;
+		}
 		#content .story p img {
 			
 			max-height: 336px;
@@ -399,7 +448,154 @@ p {
 			margin-left: 0;
 			margin-top: 0;
 		}
-
+		#lights {
+			width: 14px;
+			height: 24px;
+			background-image: url('images/light.png');
+			background-color: #fff;
+			outline: none;
+			border: none;
+			text-indent: -9999px;
+		}
+		#more {
+			margin-left: 12px;
+			margin-top: 80px;
+			width: 170px;
+			float: right;
+		}
+			#more .sidebar {
+				border: 1px solid #010101;
+			}
+				#more .sidebar h4 {
+					width: 168px;
+					padding: 5px 0 7px 0;
+					margin-bottom: 10px;
+					line-height: 1;
+					text-align: center;
+					color: #fff;
+					background-color: #465e99;
+					float: right;
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+					#more #related ul li {
+						padding: 10px;
+						border-bottom: 1px solid #010101;
+					}
+					#more #related ul li:last-of-type {
+						border-bottom: none;
+					}
+						#more #related ul li img{
+							max-height: 48px;
+							max-width: 48px;
+							float: left;
+					}
+			#more #social ul li {
+				padding: 5px;
+				width: 32px;
+				height: 32px;
+				float: left;
+			}
+			#more #social ul#sharebuttons li {
+				text-indent: -9999px;
+			}
+			#more #social ul li a.button {
+				width: 32px;
+				height: 32px;
+				display: block;
+				background-repeat: no-repeat;
+			}
+				#more #social a#facebook_button {
+					background-image: url('images/facebook_32.png');
+				}
+				#more #social a#twitter_button {
+					background-image: url('images/twitter_32.png');
+				}
+				#more #social a#gplus_button {
+					background-image: url('images/google_plus_32.png');
+				}
+				#more #social a#tumblr_button {
+					background-image: url('images/tumblr_32.png');
+				}
+				#more #social a#posterous_button {
+					background-image: url('images/posterous_32.png');
+				}
+	#results {
+		width: 780px;
+		margin-left: 12px;
+	}
+	#results, .games {
+		margin-top: 26px;
+	}
+		#results h2, .games h2{
+			font-weight: bold;
+			font-size: 42px;
+			margin-bottom: 10px;
+		}
+		#results #q {
+			width: 300px;
+		}
+		#results .pagination, .games .pagination {
+			margin: 15px 0;
+		}
+		#results #searchresults ul li, .games ul#gamelist li {
+			padding: 10px 5px;
+			border-bottom: 2px solid #050505;
+		}
+				#results #searchresults ul li:last-of-type, .games ul#gamelist li:last-of-type {
+					border-bottom: none;
+				}
+				#results #searchresults ul li:first-of-type, .games ul#gamelist li:first-of-type {
+					padding-top: 0;
+				}
+			#results #searchresults ul li .articleinfo, .games ul#gamelist li .articleinfo  {
+				margin-bottom: 10px;
+			}
+				#results #searchresults ul li .articleinfo h3, #results #searchresults ul li .articleinfo h5 {
+					display: inline-block;
+				}
+				#results #searchresults ul li .articleinfo h5{
+					font-style: italic;
+					font-size: 12px;
+				}
+			#results #searchresults ul li p, .games ul#gamelist li p {
+				margin-bottom: 10px;
+			}
+	.games ul#game-categories {
+		display: block;
+		margin: 10px 0;
+	}
+		.games ul#game-categories li {
+			display: inline-block;
+		}
+		.games ul#game-categories li a{
+			display: inline-block;
+			height: 15px;
+			padding: 8px;
+			margin: 5px;
+			text-decoration: none;
+			background-color: #465e99;
+			color: #fff;
+			line-height: 1;
+		}
+			.games ul#game-categories li.current a {
+				cursor: pointer;
+				background-color: #050505;
+			}
+				.games ul#game-categories li a:first-of-type {
+					margin-left: 0;
+				}
+		.games ul#gamelist li p img {
+			float: left;
+			height: 100px;
+			width: 100px;
+			margin-right: 10px;
+			border: 2px solid #050505;
+		}
+		.games ul#gamelist li p {
+			height: 104px;
+		}
 	#foot {
 		position: relative;
 		left: -12px;

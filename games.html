@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>The Torch Arcade</title>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="js/animate.js"></script>
+		<script src="js/lightsout.js"></script>
+		<script src="js/konami.js"></script>
+		<script>
+			var konami = new Konami();
+			konami.code = function() {
+				$('.blaze').text("Blaze");
+				$('title').text("The Pine View Blaze");
+				$('.animal').css('display','inline');
+			}
+			konami.load()
+		</script>
+	</head>
+	<body>
+		<div id="wrapper" class="storypage">
+			<header id="header">
+				<div class="info">
+					<h1><a href="/torch/"><span class="small">The</span><br/><span class="big blaze">Torch</span></a></h1>
+				</div>
+				<nav id="nav">
+					<h6 class="infostuff news">October 1, 2011</h6>
+					<h6 class="infostuff weather">Currently: 97°, Sunny</h6>
+					<aside id="readonline">
+						<a href="#">
+							<h2>Read Online</h2>
+							<p>Want to read the full Torch newspaper online? Click here.</p>
+						</a>
+					</aside>
+					<ul>
+						<li class="">
+							<a href="#">News</a>
+						</li>
+						<li>
+							<a href="#">Student Life</a>
+						</li>
+						<li class="hover">
+							<a href="#">Entertainment</a>
+							<ul>
+								<li><a href="#" class="music image">Music</a></li>
+								<li><a href="#" class="movies image">Movies</a></li>
+								<li><a href="#" class="books image">Books</a></li>
+								<li><a href="#" class="food image">Food</a></li>
+								<li><a href="#">Other</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Humor</a>
+						</li>
+						<li>
+							<a href="#">Features</a>
+						</li>
+						<li>
+							<a href="#">Opinion</a>
+						</li>
+						<li>
+							<a href="#">Sports</a>
+						</li>
+						<li>
+							<a href="#">Focus</a>
+						</li>
+						<li class="current">
+							<a href="#">Games</a>
+						</li>
+						<li class="nohover lastnavitem">
+							<form method="get" action="search.html">
+								<input type="text" name="q" id="searchbox" placeholder="Search…" />
+								<input type="submit" name="submit" id="searchsubmit" value="Go" />
+							</form>
+						</li>
+					</ul>
+				</nav>
+				<aside id="ad">
+					<img src="images/ad.png" /><p id="adtext">QuoteRobot. Create quotes. Win projects. Save hours and make more money.</p><p id="powered">ADS by INFERNO</p>
+				</aside>
+			</header>
+			<section id="content" class="games">
+				<h2>The Torch Arcade</h2>
+				<ul id="game-categories" class=" pinpointTarget">
+					<li class="current"><a href="/games">All</a></li>
+					<li><a href="/games/category/action">Action</a></li>
+					<li><a href="/games/category/adventure">Adventure</a></li>
+					<li><a href="/games/category/board-game">Board Game</a></li>
+					<li><a href="/games/category/education">Education</a></li>
+					<li><a href="/games/category/other">Other</a></li>
+					<li><a href="/games/category/puzzles">Puzzles</a></li>
+					<li><a href="/games/category/shooting">Shooting</a></li>
+					<li><a href="/games/category/sports">Sports</a></li>
+					<li><a href="/games/category/strategy">Strategy</a></li>
+				</ul>
+				<div class="pagination"><span class="disabled prev_page">« Previous</span> <span class="current">1</span> <a href="/search?page=2&amp;q=a" rel="next">2</a> <a href="/search?page=3&amp;q=a">3</a> <a href="/search?page=4&amp;q=a">4</a> <a href="/search?page=5&amp;q=a">5</a> <a href="/search?page=6&amp;q=a">6</a> <a href="/search?page=7&amp;q=a">7</a> <a href="/search?page=8&amp;q=a">8</a> <a href="/search?page=9&amp;q=a">9</a> <span class="gap">…</span> <a href="/search?page=20&amp;q=a">20</a> <a href="/search?page=21&amp;q=a">21</a> <a href="/search?page=2&amp;q=a" class="next_page" rel="next">Next »</a></div>
+					<ul id="gamelist">
+						<li>
+							<div class="articleinfo">
+								<h3><a href="article.html">In The News</a></h3>
+							</div>
+							<p><img  src="images/game.jpg" >The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…</p>
+						</li>
+						<li>
+							<div class="articleinfo">
+								<h3><a href="article.html">In The News</a></h3>
+							</div>
+							<p><img  src="images/game.jpg" >The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…</p>
+						</li>
+						<li>
+							<div class="articleinfo">
+								<h3><a href="article.html">In The News</a></h3>
+							</div>
+							<p><img  src="images/game.jpg" >The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…</p>
+						</li>
+						<li>
+							<div class="articleinfo">
+								<h3><a href="article.html">In The News</a></h3>
+							</div>
+							<p><img  src="images/game.jpg" >The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…</p>
+						</li>
+						<li>
+							<div class="articleinfo">
+								<h3><a href="article.html">In The News</a></h3>
+							</div>
+							<p><img  src="images/game.jpg" >The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…</p>
+						</li>
+					</ul>
+				<div class="pagination"><span class="disabled prev_page">« Previous</span> <span class="current">1</span> <a href="/search?page=2&amp;q=a" rel="next">2</a> <a href="/search?page=3&amp;q=a">3</a> <a href="/search?page=4&amp;q=a">4</a> <a href="/search?page=5&amp;q=a">5</a> <a href="/search?page=6&amp;q=a">6</a> <a href="/search?page=7&amp;q=a">7</a> <a href="/search?page=8&amp;q=a">8</a> <a href="/search?page=9&amp;q=a">9</a> <span class="gap">…</span> <a href="/search?page=20&amp;q=a">20</a> <a href="/search?page=21&amp;q=a">21</a> <a href="/search?page=2&amp;q=a" class="next_page" rel="next">Next »</a></div>
+				<footer id="foot">
+					<h6>All content, unless otherwise noted, is the property of the Pine View <span class="blaze">Torch</span> © 2011</h6>
+					<aside id="login">
+						<h5>Are you a staff member?</h5>
+						<a href="login">Login</a>
+					</aside>
+				</footer>
+			</section>
+			<aside id="more">
+				<section id="related" class="sidebar">
+					<h4>Cool New Stories</h4>
+					<ul>
+						<li><h5>All Your Login Are Belong to Pine View</h5></li>
+						<li><h5>Aardvarks: Underrated</h5></li>
+						<li><h5>Iron Chef comes to Pine View</h5></li>
+						<li><h5>Lord of the Flies: Book or something more?</h5></li>
+					</ul>
+				</section>
+			</aside>
+		</div>
+	</body>
+</html>
