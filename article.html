@@ -18,6 +18,10 @@
 			}
 			konami.load()
 		</script>
+		
+		<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<div id="wrapper" class="storypage">
@@ -31,7 +35,7 @@
 					<aside id="readonline">
 						<a href="#">
 							<h2>Read Online</h2>
-							<p>Want to read the full Torch newspaper online? Click here.</p>
+							<p>Click here to read the print Torch online.</p>
 						</a>
 					</aside>
 					<ul>
@@ -54,9 +58,9 @@
 						<li>
 							<a href="#">Humor</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="#">Features</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="#">Opinion</a>
 						</li>
@@ -99,6 +103,7 @@
 				</footer>
 			</section>
 			<aside id="more">
+				<button onclick="flip_switch()" id="lights">Lights Out</button>
 				<section id="social" class="sidebar">
 					<h4>Actions</h4>
 					<ul id="sharebuttons">
@@ -107,11 +112,7 @@
 						<li><a id="gplus_button" class="button" href="#">Google+</a></li>
 						<li><a id="tumblr_button" class="button" href="#">Tumblr</a></li>
 						<li><a id="posterous_button" class="button" href="#">Posterous</a></li>
-					</ul>
-					<ul>
-						<li><button onclick="flip_switch()" id="lights">Lights Out</button></li>	
 						<li><a id="email_button" class="button" href="mailto:">Email</a></li>
-						<li><a id="print_button" class="button" href="#" onclick="window.print();return false;">Print</a></li>
 					</ul>
 				</section>
 				<section id="related" class="sidebar">

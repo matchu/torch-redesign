@@ -25,7 +25,6 @@ p {
 #header {
 	position: fixed;
 	width: 180px;
-	float: left;
 	font-stretch: condensed;
 	font-weight: bold;
 	min-height:750px;
@@ -192,8 +191,8 @@ p {
 }
 #wrapper.storypage #content {
 	width: 598px;
-	float: left;
-	margin-left: 204px;
+	float: right;
+	margin-right: 182px;
 }
 #alert {
 		color: #fff;
@@ -438,7 +437,6 @@ p {
 			margin-bottom: 12px;
 		}
 		#content .story p img {
-			
 			max-height: 336px;
 			max-width: 336px;
 			float: left;
@@ -451,17 +449,14 @@ p {
 		#lights {
 			width: 14px;
 			height: 24px;
-			background-image: url('images/light.png');
-			background-color: #fff;
 			outline: none;
 			border: none;
-			text-indent: -9999px;
 		}
 		#more {
-			margin-left: 12px;
+			position: absolute;
 			margin-top: 80px;
 			width: 170px;
-			float: right;
+			right: 0px;
 		}
 			#more .sidebar {
 				border: 1px solid #010101;
@@ -578,6 +573,12 @@ p {
 			background-color: #465e99;
 			color: #fff;
 			line-height: 1;
+		}
+		.games ul#game-categories li a:hover{
+			background-color: #41568c;
+		}
+		.games ul#game-categories li a:active{
+			background-color: #4c66a6;
 		}
 			.games ul#game-categories li.current a {
 				cursor: pointer;
