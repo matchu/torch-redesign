@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Calendar</title>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="js/animate.js"></script>
+		<script src="js/lightsout.js"></script>
+		<script src="js/konami.js"></script>
+		<script>
+			var konami = new Konami();
+			konami.code = function() {
+				$('.blaze').text("Blaze");
+				$('title').text("The Pine View Blaze");
+				$('.animal').css('display','inline');
+			}
+			konami.load()
+		</script>
+		
+		<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="info">
+					<h1><a href="/torch/"><span class="small">The</span><br/><span class="big blaze">Torch</span></a></h1>
+				</div>
+				<nav id="nav">
+					<h6 class="infostuff news">October 1, 2011</h6>
+					<h6 class="infostuff weather">Currently: 97°, Sunny</h6>
+					<aside id="readonline">
+						<a href="#">
+							<h2>Read Online</h2>
+							<p>Click here to read the print Torch online.</p>
+						</a>
+					</aside>
+					<ul>
+						<li class="">
+							<a href="#">News</a>
+						</li>
+						<li>
+							<a href="#">Student Life</a>
+						</li>
+						<li class="hover">
+							<a href="#">Entertainment</a>
+							<ul>
+								<li><a href="#" class="music image">Music</a></li>
+								<li><a href="#" class="movies image">Movies</a></li>
+								<li><a href="#" class="books image">Books</a></li>
+								<li><a href="#" class="food image">Food</a></li>
+								<li><a href="#">Other</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Humor</a>
+						</li>
+						<!--<li>
+							<a href="#">Features</a>
+						</li>-->
+						<li>
+							<a href="#">Opinion</a>
+						</li>
+						<li>
+							<a href="#">Sports</a>
+						</li>
+						<li>
+							<a href="#">Focus</a>
+						</li>
+						<li>
+							<a href="games.html">Games</a>
+						</li>
+						<li class="current">
+							<a href="calendar.html">Calendar</a>
+						</li>
+						<li class="nohover lastnavitem">
+							<form method="get" action="search.html">
+								<input type="text" name="q" id="searchbox" placeholder="Search…" />
+								<input type="submit" name="submit" id="searchsubmit" value="Go" />
+							</form>
+						</li>
+					</ul>
+				</nav>
+				<aside id="ad">
+					<img src="images/ad.png" /><p id="adtext">QuoteRobot. Create quotes. Win projects. Save hours and make more money.</p><p id="powered">ADS by INFERNO</p>
+				</aside>
+			</header>
+			<section id="content">
+				<div id="calendar">
+					<h2>Campus Calendar</h2>
+					<iframe src="https://www.google.com/calendar/b/0/embed?title=Campus%20Events&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=pineviewtorch.com_4rd3gcpi5muoe8ukmm0gckchg8%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style=" border-width:0 " width="768" height="600" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<footer id="foot">
+					<h6>All content, unless otherwise noted, is the property of the Pine View <span class="blaze">Torch</span> © 2011</h6>
+					<aside id="login">
+						<h5>Are you a staff member?</h5>
+						<a href="login">Login</a>
+					</aside>
+				</footer>
+			</section>
+		</div>
+	</body>
+</html>

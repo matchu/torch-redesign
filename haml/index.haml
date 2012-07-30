@@ -1,0 +1,286 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title Pine View Torch Online
+    %link{:href => "reset.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "index_2.css", :rel => "stylesheet", :type => "text/css"}
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+    %script{:src => "js/konami.js"}
+    :javascript
+      var konami = new Konami();
+      konami.code = function() {
+      	$('.blaze').text("Blaze");
+      	$('title').text("The Pine View Blaze");
+      	$('.animal').css('display','inline');
+      }
+      konami.load();
+      
+		  /[if IE]
+        %script{:src => "http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"}
+        :css
+          #searchsubmit {
+          padding: 3px 0;
+          }
+          #featuredstories p {
+          font-size: 14px;
+          }
+  %body
+    #wrapper
+      #titlehero
+        %h1
+          %a{:href => "/torch/"}
+            %span.the The
+            %span.blaze.konami.blueflame Torch
+      #navwrapper
+        %header#header
+          .info
+            %h1
+              %a{:href => "/torch/"}
+                %span.small The
+                %span.blaze.konami.big Torch
+          %nav#nav
+            %h6.infostuff#date October 1, 2011
+            %h6.infostuff#weather Currently: 97°, Sunny
+            %aside#readonline
+              %a{:href => "#"}
+                %h2 Read Online
+                %p Click here to read the print Torch online.
+            %ul
+              %li
+                %a{:href => "#"} News
+              %li
+                %a{:href => "#"} Student Life
+              %li
+                %a{:href => "#"} Entertainment
+              -# .hover
+                %ul
+                  %li
+                    %a.music.image{:href => "#"} Music
+                  %li
+                    %a.movies.image{:href => "#"} Movies
+                  %li
+                    %a.books.image{:href => "#"} Books
+                  %li
+                    %a.food.image{:href => "#"} Food
+                  %li
+                    %a{:href => "#"} Other
+              %li
+                %a{:href => "#"} Humor
+              -#
+                %li
+                  %a{:href => "#"} Features
+              %li
+                %a{:href => "#"} Opinion
+              %li
+                %a{:href => "#"} Sports
+              %li
+                %a{:href => "#"} Focus
+              %li
+                %a{:href => "games.html"} Games
+              %li
+                %a{:href => "calendar.html"} Calendar
+              %li.nohover.lastnavitem
+                %form{:action => "search.html", :method => "get"}
+                  %input#searchbox{:name => "q", :placeholder => "Search…", :type => "text"}/
+                  %input#searchsubmit{:name => "submit", :type => "submit", :value => "Go"}/
+          %aside#ad
+            %img{:src => "images/ad.png"}/
+            %p#adtext QuoteRobot. Create quotes. Win projects. Save hours and make more money.
+            %p#powered ADS by INFERNO
+      %section#content
+        #alert.line
+          %h3 Welcome to the new PVTorch.com
+        %section#featured
+          %ul#featuredstories
+            %li.selected
+              / clicking on item links to story
+              %article
+                %h2 All Your Login Are Belong To Pine View
+                %img.headlinerimg{:src => "images/headliner.png"}/
+                %p Today the Pine View Association announced that they would save every username and password students use to login to websites via the public school internet. This announcement comes after the PVA decided to intrude on student privacy so students would be less worried about having any privacy. The PVA consulted with world-renowned phycologist Dr. Phil who told them "When students have no expectation of privacy, you can never violate their privacy." The PVA was swift in enacting this policy, claiming that they wanted students to feel free from secrets. There isn't any word yet from the PVA as to what they'll do with your logins, but its safe to assume they won't keep them in an unsecured  online database, right?
+                .fade
+                %p.jump
+                  %a{:href => "article.html"} Read more →
+            %li
+              %article
+                %h2 Aardvarks: Underrated
+                %img.headlinerimg{:src => "images/aardvark.jpg"}/
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet consectetur faucibus. Donec non libero et neque vestibulum luctus sit amet vel mauris. Aenean pretium diam eu felis congue sit amet volutpat neque congue. Cras sit amet metus tellus. Proin posuere auctor lacus ut euismod. Proin quis odio nunc, sed tempus ligula. Donec sed eros odio, nec blandit felis. Donec non dui lectus, vel hendrerit neque. Morbi id lorem nec lorem ullamcorper sollicitudin eu et massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi sit amet leo non turpis aliquet varius non eget risus. Cras placerat, nunc a cursus imperdiet, est lacus convallis odio, ut molestie orci nibh non nunc. Duis scelerisque porta elit, non condimentum dolor condimentum et. Donec at orci sed velit blandit ornare sit amet in enim.
+                .fade
+                %p.jump
+                  %a{:href => "article.html"} Read more →
+            %li
+              %article
+                %h2 Iron Chef comes to Pine View
+                %img.headlinerimg{:src => "images/iron-chef.jpg"}/
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet consectetur faucibus. Donec non libero et neque vestibulum luctus sit amet vel mauris. Aenean pretium diam eu felis congue sit amet volutpat neque congue. Cras sit amet metus tellus. Proin posuere auctor lacus ut euismod. Proin quis odio nunc, sed tempus ligula. Donec sed eros odio, nec blandit felis. Donec non dui lectus, vel hendrerit neque. Morbi id lorem nec lorem ullamcorper sollicitudin eu et massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi sit amet leo non turpis aliquet varius non eget risus. Cras placerat, nunc a cursus imperdiet, est lacus convallis odio, ut molestie orci nibh non nunc. Duis scelerisque porta elit, non condimentum dolor condimentum et. Donec at orci sed velit blandit ornare sit amet in enim.
+                .fade
+                %p.jump
+                  %a{:href => "article.html"} Read more →
+            %li
+              %article
+                %h2 Lord of the Flies: book or more?
+                %img.headlinerimg{:src => "images/lotf.jpg"}/
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet consectetur faucibus. Donec non libero et neque vestibulum luctus sit amet vel mauris. Aenean pretium diam eu felis congue sit amet volutpat neque congue. Cras sit amet metus tellus. Proin posuere auctor lacus ut euismod. Proin quis odio nunc, sed tempus ligula. Donec sed eros odio, nec blandit felis. Donec non dui lectus, vel hendrerit neque. Morbi id lorem nec lorem ullamcorper sollicitudin eu et massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi sit amet leo non turpis aliquet varius non eget risus. Cras placerat, nunc a cursus imperdiet, est lacus convallis odio, ut molestie orci nibh non nunc. Duis scelerisque porta elit, non condimentum dolor condimentum et. Donec at orci sed velit blandit ornare sit amet in enim.
+                .fade
+                %p.jump
+                  %a{:href => "article.html"} Read more →
+          #storylist
+            %ul
+              %li.selected.top.left
+                %img{:src => "images/headliner.png"}/
+                .teaser
+                  %h5 All Your Login Are Belong to Pine View
+                  %p Today the Pine View Association announced that they would save…
+              %li.top
+                %img{:src => "images/aardvark.jpg"}/
+                .teaser
+                  %h5 Aardvarks: Underrated
+                  %p Aardvarks, despite the weird spelling of their name, are very awesome…
+              %li.left
+                %img{:src => "images/iron-chef.jpg"}/
+                .teaser
+                  %h5 Iron Chef comes to Pine View
+                  %p Iron Chef, the ultimate cooking competition, is coming to Pine View on May 32nd…
+              %li
+                %img{:src => "images/lotf.jpg"}/
+                .teaser
+                  %h5 Lord of the Flies: Book or something more?
+                  %p Some say its a book, some say its a secret plan to destroy the world…
+        %section#main
+          .line.mainborder
+            / Nothing to see here, mozy along.
+          #columnwrapper
+            %ul#articleselect
+              %li.selected.popular
+                %a{:href => "#popular", :title => "Popular Stories"} Most Popular
+              %li.recent
+                %a{:href => "#recent", :title => "Recent Stories"} Most Recent
+            %div
+              %ul.popular.list
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"}
+                        Google Gathers Gallons of News: A Review
+                    %h5
+                      by Zackary Corbett
+                      %span.animal.konami : Meercat
+                  %p For those who find themselves constantly looking for the next juicy tidbit of news, searching through blog after blog for that one interesting new story…
+                  %span.date Published August 10, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} Cast shines in "Superstar:" A Review
+                    %h5
+                      by Katie Dunn-Rankin
+                      %span.animal.konami : Jack Russell Puppy/Small Child
+                  %p As the curtain rises, angry priests dressed in all black meet to discuss the threat of Jesus of Nazareth to the Jewish people. They sing in low…
+                  %span.date Published August 05, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} In The News
+                    %h5
+                      by Anna Beatty
+                      %span.animal.konami : American Shorthair
+                  %p The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…
+                  %span.date Published August 12, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} Beyond the...Badge: Patrick Bassett
+                    %h5
+                      by Sanchita Mukherjee
+                      %span.animal.konami : Tigress
+                  %p During the day, Pine View is home to over 2,000 people. But after students, teachers, administrators, and other staff members leave campus, Pine View's…
+                  %span.date Published May 27, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} Beyond the...Golf Cart: James Hawkins
+                    %h5
+                      by Daysi Gomez
+                      %span.animal.konami : Pansy
+                  %p To some students, James Hawkins is simply one of the many aides on campus who help make Pine View run like clockwork. To others, he is the guy in…
+                  %span.date Published May 27, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} Teams tie in Tie vs. Tie-Dye tug-of-war
+                    %h5
+                      by John Schweig
+                      %span.animal.konami : Three-Toed Sloth
+                  %p As they ritually broke with their past on the annual Senior Day Friday, the Class of 2011 literally broke the tug-of-war rope and achieved a first…
+                  %span.date Published May 27, 2011
+              %ul.recent.list
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} Beyond the...Golf Cart: James Hawkins
+                    %h5
+                      by Daysi Gomez
+                      %span.animal.konami : Pansy
+                  %p To some students, James Hawkins is simply one of the many aides on campus who help make Pine View run like clockwork. To others, he is the guy in…
+                  %span.date Published May 27, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} Teams tie in Tie vs. Tie-Dye tug-of-war
+                    %h5
+                      by John Schweig
+                      %span.animal.konami : Three-Toed Sloth
+                  %p As they ritually broke with their past on the annual Senior Day Friday, the Class of 2011 literally broke the tug-of-war rope and achieved a first…
+                  %span.date Published May 27, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"}
+                        Google Gathers Gallons of News: A Review
+                    %h5
+                      by Zackary Corbett
+                      %span.animal.konami : Meercat
+                  %p For those who find themselves constantly looking for the next juicy tidbit of news, searching through blog after blog for that one interesting new story…
+                  %span.date Published August 10, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} Cast shines in "Superstar:" A Review
+                    %h5
+                      by Katie Dunn-Rankin
+                      %span.animal.konami : Jack Russell Puppy/Small Child
+                  %p As the curtain rises, angry priests dressed in all black meet to discuss the threat of Jesus of Nazareth to the Jewish people. They sing in low…
+                  %span.date Published August 05, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} In The News
+                    %h5
+                      by Anna Beatty
+                      %span.animal.konami : American Shorthair
+                  %p The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…
+                  %span.date Published August 12, 2011
+                %li
+                  .articleinfo
+                    %h3
+                      %a{:href => "article.html"} Beyond the...Badge: Patrick Bassett
+                    %h5
+                      by Sanchita Mukherjee
+                      %span.animal.konami : Tigress
+                  %p During the day, Pine View is home to over 2,000 people. But after students, teachers, administrators, and other staff members leave campus, Pine View's…
+                  %span.date Published May 27, 2011
+        %footer#foot
+          %h6
+            All content, unless otherwise noted, is
+            %span.belongto.konami the property of
+            the Pine View
+            %span.blaze.konami Torch
+            © 2011
+          %aside#login
+            %h5 Are you a staff member?
+            %a{:href => "login"} Login
+    %script{:src => "js/home.js", :type => "text/javascript"}
+    %script{:src => "js/hashchange.js", :type => "text/javascript"}
+    %script{:src => "js/articleview.js", :type => "text/javascript"}
+    %script{:src => "js/jquery.animate-enhanced.min.js", :type => "text/javascript"}

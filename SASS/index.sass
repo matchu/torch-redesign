@@ -1,0 +1,598 @@
+body
+  background: #ffffff
+  font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif
+  color: #050505
+  text-rendering: optimizeLegibility
+  font-size: 16px
+
+/*a:link, a:visited { color: #ccc; text-decoration: none; }
+ *a:hover { color: #ccc; text-decoration: underline;}
+ *a:active { color: #ccc; }
+
+a
+  color: #465e99
+
+p
+  font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif
+  line-height: 1.4
+
+#wrapper
+  position: relative
+  width: 988px
+  margin: 0 auto
+  margin-top: 0 !important
+  padding-top: 0 !important
+  top: 0 !important
+
+#titlehero
+  position: absolute
+  background: #fff
+  z-index: 9999
+  width: 100%
+  height: 70px
+  text-align: center
+  line-height: 1
+  padding: 5px 0 10px
+  h1
+    font-size: 75px
+    a
+      text-decoration: none
+    .the
+      color: #111620
+    .blueflame
+      color: #465e99
+
+#header
+  position: fixed
+  width: 180px
+  font-stretch: condensed
+  font-weight: bold
+  height: 100%
+  border-right: 12px solid #050505
+  z-index: -9999
+  .info
+    height: 80px
+    line-height: 1
+    margin-top: 5px
+  h1
+    padding-top: 5px
+    margin-bottom: 5px
+    a
+      text-decoration: none
+    span
+      display: block
+    br
+      display: none
+    .small
+      font-size: 14px
+      line-height: 1px
+      color: #050505
+    .big
+      font-size: 62px
+      color: #465e99
+  #divider
+    width: 110px
+    height: 1px
+    background-color: #050505
+    margin-left: 30px
+    margin-bottom: 10px
+  #readonline
+    padding-bottom: 10px
+    a
+      color: #fff
+      background-color: #656565
+      display: block
+      text-decoration: none
+      -webkit-transition: all 0.3s ease
+      -moz-transition: all 0.3s ease
+      padding: 10px 0 10px 10px
+      font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif
+      &:hover
+        background-color: #465e99
+      h2
+        font-size: 24px
+        margin-bottom: 10px
+      p
+        font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif
+
+.infostuff
+  font-size: 12px
+  font-weight: bolder
+  font-stretch: normal
+
+.date
+  padding-top: 10px
+
+.weather
+  padding-bottom: 10px
+
+#nav
+  ul
+    overflow-y: scroll
+    height: auto
+    max-height: 400px
+  li
+    -webkit-transition: all 0.3s ease
+    -moz-transition: all 0.3s ease
+    &.current
+      background-color: #050505
+      padding-left: 5px
+    &:hover
+      background-color: #c0c9dc
+      padding-left: 5px
+    &.nohover:hover
+      background-color: #fff
+      padding-left: 0
+    &.lastnavitem
+      margin-top: 10px
+    &.hover
+      ul
+        display: none
+      &:hover ul
+        display: block
+      ul li
+        width: 165px
+        a
+          padding-left: 15px
+          &:hover
+            background-color: #465e99
+            color: #fff
+            -webkit-transition: all 0.15s ease
+            -moz-transition: all 0.15s ease
+    a
+      color: #050505
+      text-decoration: none
+      text-transform: capitalize
+      width: 100%
+      padding: 5px 0
+      display: block
+      font-size: 15px
+      line-height: 14px
+    &.current a
+      color: #fff
+
+#searchbox
+  outline: none
+  border: 1px solid #050505
+  padding: 5px
+  margin: 0
+  float: left
+  width: 120px
+  &:focus
+    border-color: #600
+
+#searchsubmit
+  width: 36px
+  margin: 0
+  padding: 0
+  border-width: 1px 1px 1px 0
+  border-color: #050505
+  padding: 5px 0
+  float: left
+  background-color: #fff
+
+#ad
+  position: absolute
+  bottom: 0px
+  font-stretch: normal
+  font-weight: normal
+  color: #fff
+  background-color: #050505
+  padding: 5px
+  text-align: inherit
+  display: none
+  #powered
+    display: block
+    margin-top: 10px
+    font-size: 12px
+    text-align: left
+    font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif
+
+#content
+  width: 796px
+  float: right
+  z-index: 9999
+  background-color: #fff
+  margin-top: 85px
+
+#wrapper.storypage #content
+  width: 598px
+  margin-right: 186px
+
+#alert
+  color: #fff
+  background-color: #465e99
+  padding: 5px 0 5px 12px
+  font-stretch: condensed
+  font-weight: bold
+  position: relative
+  width: 780px
+  height: 20px
+
+#featured
+  margin-top: 12px
+  margin-left: 12px
+  width: 780px
+  ul#featuredstories li
+    display: none
+    -webkit-transition: all .6s ease
+    -moz-transition: all .6s ease
+    &.selected
+      display: block
+      height: 620px
+      overflow: hidden
+      position: relative
+
+#featuredstories
+  h2
+    font-weight: 500
+    font-size: 36px
+    margin-bottom: 10px
+  img
+    float: left
+    width: 792px
+    height: 500px
+    z-index: 9999
+    margin: 0 5px 0 0
+  p
+    z-index: -999
+  .fade
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)
+    /* FF3.6+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)))
+    /* Chrome,Safari4+
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)
+    /* Chrome10+,Safari5.1+
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)
+    /* Opera11.10+
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)
+    /* IE10+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 )
+    /* IE6-9
+    background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)
+    /* W3C
+    position: absolute
+    bottom: 20px
+    width: 100%
+    height: 11px
+    z-index: 1
+  .jump
+    position: absolute
+    bottom: 0px
+    background-color: #fff
+    width: 100%
+    text-align: right
+    z-index: 9999
+
+#storylist
+  margin: 20px 0 12px 0
+  height: 157px
+  ul li
+    cursor: pointer
+    background-color: #d8dde8
+    height: 68px
+    padding: 5px
+    width: 380px
+    display: block
+    float: left
+    color: #050505
+    -webkit-transition: all 0.5s ease
+    &.left
+      border-right: 1px solid #111620
+      width: 379px
+    &.top
+      border-bottom: 1px solid #111620
+    &.selected, &:hover
+      background-color: #111620
+      color: #fff
+    &:last-child
+      border-bottom: none
+    div.teaser
+      width: 309px
+      float: right
+      height: 68px
+      overflow-y: hidden
+      font-weight: normal
+    p
+      font-size: 14px
+    img
+      max-height: 60px
+      max-width: 60px
+      float: left
+      margin-right: 10px
+
+#main
+  margin-top: 20px
+  margin-left: 12px
+  height: 100%
+
+.mainborder
+  background-color: #050505
+  position: relative
+  left: -12px
+  width: 792px
+  height: 15px
+  margin-bottom: 20px
+
+#main
+  #articleselect
+    color: #fff
+    background-color: #465e99
+    font-stretch: condensed
+    font-weight: bold
+    height: 18px
+    padding: 4px 0
+    margin-bottom: 20px
+    text-align: center
+    li
+      display: inline-block
+      padding-right: 10px
+      margin-right: 5px
+      border-right: 1px solid #fff
+      line-height: 1
+      padding-bottom: 2px
+      cursor: pointer
+      a
+        &:link, &:visited
+          color: #fff
+          text-decoration: none
+      &:last-of-type
+        padding-right: 0
+        margin-right: 0
+        border-right: none
+      &.selected a
+        color: #d8dde8
+        cursor: default
+  #columnwrapper
+    position: relative
+    height: auto
+    float: none
+    display: block
+    div
+    ul.list li
+      width: 380px
+      height: auto
+      line-height: 1.3
+      margin-bottom: 20px
+      float: left
+      &:nth-of-type(even)
+        margin-left: 20px
+      ul li
+        margin-bottom: 8px
+        padding-bottom: 8px
+        border-bottom: 1px solid #ddd
+
+.animal
+  display: none
+
+#main #columnwrapper ul.list li
+  ul li:last-child
+    border-bottom: none
+    margin: 0
+    padding: 0
+  .date
+    font-size: 12px
+    color: #777
+    margin-top: 10px
+  .articleinfo
+    margin-bottom: 5px
+    h3
+      font-size: 18px
+      a
+        text-decoration: none
+      .hot
+        color: #fff
+        background-color: #465e99
+        padding: 4px
+        float: right
+        font-size: 13px
+        text-transform: uppercase
+        font-weight: bold
+    h5
+      font-size: 12px
+      color: #777
+      font-weight: normal
+
+#content .story
+  margin-top: 26px
+  font-size: 16px
+  h2
+    font-weight: bold
+    font-size: 42px
+    margin-bottom: 5px
+  .author
+    font-weight: lighter
+    font-size: 16px
+    font-style: italic
+    margin-bottom: 5px
+    font-family: Georgia, 'Times New Roman', Times, sans-serif
+  .info
+    font-weight: lighter
+    font-size: 16px
+    font-style: italic
+    margin-bottom: 5px
+    font-family: Georgia, 'Times New Roman', Times, sans-serif
+    margin-bottom: 16px
+  p
+    margin-bottom: 16px
+    &:last-of-type
+      margin-bottom: 12px
+    img
+      max-height: 336px
+      max-width: 336px
+      float: left
+      margin: 10px
+    &:first-of-type img:first-of-type
+      margin-left: 0
+      margin-top: 0
+
+#lights
+  outline: none
+  border: none
+  padding: 0
+  margin: 0
+  width: 32px
+  height: 32px
+
+#more
+  position: absolute
+  width: 170px
+  top: 85px
+  right: 0px
+  .sidebar
+    border: 1px solid #010101
+    display: block
+    height: auto
+    h4
+      width: 168px
+      padding: 5px 0 7px 0
+      line-height: 1
+      text-align: center
+      color: #fff
+      background-color: #465e99
+      float: right
+      font-size: 14px
+      text-transform: uppercase
+      font-weight: bold
+  #related ul li
+    clear: both
+    padding: 10px
+    border-bottom: 1px solid #010101
+    &:last-of-type
+      border-bottom: none
+    img
+      max-height: 48px
+      max-width: 48px
+      float: left
+  #social
+    padding-bottom: 5px
+    padding-left: 2px
+    ul
+      li
+        padding: 5px 3px 0 3px
+        width: 32px
+        height: 32px
+        display: block
+        cursor: pointer
+        float: left
+      &#sharebuttons li .button
+        text-indent: -9999px
+      li a.button
+        width: 32px
+        height: 32px
+        display: block
+        background-repeat: no-repeat
+    a
+      &#facebook_button
+        background-image: url('images/facebook_32.png')
+      &#twitter_button
+        background-image: url('images/twitter_32.png')
+      &#gplus_button
+        background-image: url('images/google_plus_32.png')
+      &#tumblr_button
+        background-image: url('images/tumblr_32.png')
+      &#posterous_button
+        background-image: url('images/posterous_32.png')
+
+#results
+  width: 780px
+  margin-left: 12px
+  margin-top: 26px
+
+.games
+  margin-top: 26px
+
+#results h2, .games h2
+  font-weight: bold
+  font-size: 42px
+  margin-bottom: 10px
+
+#results
+  #q
+    width: 300px
+  .pagination
+    margin: 15px 0
+    clear: both
+
+.games .pagination
+  margin: 15px 0
+  clear: both
+
+#results #searchresults ul li, .games ul#gamelist li
+  padding: 10px 5px
+  border-bottom: 2px solid #050505
+
+#results #searchresults ul li:last-of-type, .games ul#gamelist li:last-of-type
+  border-bottom: none
+
+#results #searchresults ul li:first-of-type, .games ul#gamelist li:first-of-type
+  padding-top: 0
+
+#results #searchresults ul li .articleinfo, .games ul#gamelist li .articleinfo
+  margin-bottom: 10px
+
+#results #searchresults ul li
+  .articleinfo
+    h3
+      display: inline-block
+    h5
+      display: inline-block
+      font-style: italic
+      font-size: 12px
+  p
+    margin-bottom: 10px
+
+.games ul
+  &#gamelist li p
+    margin-bottom: 10px
+  &#game-categories
+    display: block
+    margin: 10px 0
+    font-family: 'Myraid Pro', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif
+    li
+      float: left
+      a
+        display: block
+        height: 15px
+        padding: 8px
+        margin: 5px
+        text-decoration: none
+        background-color: #465e99
+        color: #fff
+        line-height: 1
+        &:hover
+          background-color: #41568c
+        &:active
+          background-color: #4c66a6
+      &.current a
+        cursor: pointer
+        background-color: #050505
+      a:first-of-type
+        margin-left: 0
+  &#gamelist li p
+    img
+      float: left
+      height: 100px
+      width: 100px
+      margin-right: 10px
+      border: 2px solid #050505
+    height: 104px
+
+#calendar
+  margin: 12px 0 12px 12px
+  h2
+    margin-bottom: 12px
+
+#foot
+  position: relative
+  left: -12px
+  width: 780px
+  padding: 10px 0 10px 12px
+  background-color: #050505
+  color: #fff
+  clear: both
+
+.storypage #foot
+
+#foot h6
+  margin-bottom: 20px

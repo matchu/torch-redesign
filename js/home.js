@@ -75,4 +75,3 @@ ROTATOR.initialize({
 if(document.location.search.indexOf('norotate') == -1) {
   ROTATOR.start();
 }
-

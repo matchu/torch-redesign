@@ -4,7 +4,7 @@
 	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>The Pine View Torch Online</title>
 		<link rel="stylesheet" type="text/css" href="reset.css" />
-		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" type="text/css" href="index_2.css" />
 		<script src="http://code.jquery.com/jquery.min.js"></script>
 		<script src="js/konami.js"></script>
 		<script>
@@ -17,17 +17,28 @@
 			konami.load()
 		</script>
 		
-		<!--[if lt IE 9]>
+		<!--[if IE]>
 		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<style>
+			#searchsubmit {
+				padding: 3px 0;
+			}
+			#featuredstories p {
+				font-size: 14px;
+			}
+		</style>
 		<![endif]-->
 		
 	</head>
 	<body>
 		<div id="wrapper">
+			<div id="titlehero">
+				<h1><a href="/torch/"><span class="the">The</span> <span class="blaze blueflame">Torch</span></a></h1>
+			</div>
 			<div id="navwrapper">
 			<header id="header">
 				<div class="info">
-					<h1><a href="/torch/"><span class="small">The</span><br/><span class="big blaze">Torch</span></a></h1>
+					<h1><a href="/torch/"><span class="small">The</span><span class="big blaze">Torch</span></a></h1>
 				</div>
 				<nav id="nav">
 					<h6 class="infostuff news">October 1, 2011</h6>
@@ -72,6 +83,9 @@
 						</li>
 						<li>
 							<a href="games.html">Games</a>
+						</li>
+						<li>
+							<a href="calendar.html">Calendar</a>
 						</li>
 						<li class="nohover lastnavitem">
 							<form method="get" action="search.html">
@@ -137,12 +151,11 @@
 					<div class="line mainborder"><!--Nothing to see here, mozy along.--></div>
 					<div id="columnwrapper">
 						<ul id="articleselect">
-							<li class="selected">Most Popular</li>
-							<li>Most Recent</li>
-							<li>From the Torch</li>
+							<li class="selected popular"><a href="#popular" title="Popular Stories">Most Popular</a></li>
+							<li class="recent"><a href="#recent" title="Recent Stories">Most Recent</a></li>
 						</ul>
 						<div>
-						<ul class="recent list">
+						<ul class="popular list">
 							<li>
 								<div class="articleinfo">
 									<h3><a href="article.html">
@@ -194,6 +207,58 @@
 								<span class="date">Published May 27, 2011</span>
 							</li>
 						</ul>
+						<ul class="recent list">
+							<li>
+								<div class="articleinfo">
+									<h3><a href="article.html">Beyond the...Golf Cart: James Hawkins</a></h3>
+									<h5>by Daysi Gomez<span class="animal">: Pansy</span></h5>
+								</div>
+								<p>To some students, James Hawkins is simply one of the many aides on campus who help make Pine View run like clockwork. To others, he is the guy in…</p>
+								<span class="date">Published May 27, 2011</span>
+							</li>
+							<li>
+								<div class="articleinfo">
+									<h3><a href="article.html">Teams tie in Tie vs. Tie-Dye tug-of-war</a></h3>
+									<h5>by John Schweig<span class="animal">: Three-Toed Sloth</span></h5>
+								</div>
+								<p>As they ritually broke with their past on the annual Senior Day Friday, the Class of 2011 literally broke the tug-of-war rope and achieved a first…</p>
+								<span class="date">Published May 27, 2011</span>
+							</li>
+							<li>
+								<div class="articleinfo">
+									<h3><a href="article.html">
+										Google Gathers Gallons of News: A Review
+									</a></h3>
+									<h5>by Zackary Corbett<span class="animal">: Meercat</span></h5>
+								</div>
+								<p>For those who find themselves constantly looking for the next juicy tidbit of news, searching through blog after blog for that one interesting new story…</p>
+								<span class="date">Published August 10, 2011</span>
+							</li>
+							<li>
+								<div class="articleinfo">
+									<h3><a href="article.html">Cast shines in "Superstar:" A Review</a></h3>
+									<h5>by Katie Dunn-Rankin<span class="animal">: Jack Russell Puppy/Small Child</span></h5>
+								</div>
+								<p>As the curtain rises, angry priests dressed in all black meet to discuss the threat of Jesus of Nazareth to the Jewish people. They sing in low…</p>
+								<span class="date">Published August 05, 2011</span>
+							</li>
+							<li>
+								<div class="articleinfo">
+									<h3><a href="article.html">In The News</a></h3>
+									<h5>by Anna Beatty<span class="animal">: American Shorthair</span></h5>
+								</div>
+								<p>The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…</p>
+								<span class="date">Published August 12, 2011</span>
+							</li>
+							<li>
+								<div class="articleinfo">
+									<h3><a href="article.html">Beyond the...Badge: Patrick Bassett</a></h3>
+									<h5>by Sanchita Mukherjee<span class="animal">: Tigress</span></h5>
+								</div>
+								<p>During the day, Pine View is home to over 2,000 people. But after students, teachers, administrators, and other staff members leave campus, Pine View's…</p>
+								<span class="date">Published May 27, 2011</span>
+							</li>
+						</ul>
 						</div>
 					</div>
 				</section>
@@ -207,6 +272,8 @@
 			</section>
 		</div>
 		<script type="text/javascript" src="js/home.js"></script>
+		<script type="text/javascript" src="js/hashchange.js"></script>
+		<script type="text/javascript" src="js/articleview.js"></script>
 		<script type="text/javascript" src="js/jquery.animate-enhanced.min.js"></script>
 	</body>
 </html>
