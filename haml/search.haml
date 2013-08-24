@@ -1,0 +1,94 @@
+%section#content
+  %section#results
+    %h2 Search Results for: Apple
+    %div
+      %form{:action => "http://pineviewtorch.com/search", :method => "get"}
+        %select#section_id{:name => "section_id"}
+          %option{:selected => "selected", :value => ""} All sections
+          %option{:value => "1"} News
+          %option{:value => "8"} Student Life
+          %option{:value => "2"} Entertainment
+          %option{:value => "3"} Humor
+          %option{:value => "4"} Features
+          %option{:value => "5"} Opinion
+          %option{:value => "6"} Sports
+          %option{:value => "7"} Focus
+        %input#q{:name => "q", :type => "text", :value => ""}
+          %input{:type => "submit", :value => "Search"}
+      .pagination
+        %span.disabled.prev_page « Previous
+        %span.current 1
+        %a{:href => "/search?page=2&q=a", :rel => "next"} 2
+        %a{:href => "/search?page=3&q=a"} 3
+        %a{:href => "/search?page=4&q=a"} 4
+        %a{:href => "/search?page=5&q=a"} 5
+        %a{:href => "/search?page=6&q=a"} 6
+        %a{:href => "/search?page=7&q=a"} 7
+        %a{:href => "/search?page=8&q=a"} 8
+        %a{:href => "/search?page=9&q=a"} 9
+        %span.gap …
+        %a{:href => "/search?page=20&q=a"} 20
+        %a{:href => "/search?page=21&q=a"} 21
+        %a.next_page{:href => "/search?page=2&q=a", :rel => "next"} Next »
+    #searchresults
+      %ul
+        %li
+          .articleinfo
+            %h3
+              %a{:href => "article.html"} Cast shines in "Superstar:" A Review
+            %h5
+              by Katie Dunn-Rankin
+              %span.animal : Jack Russell Puppy/Small Child
+          %p As the curtain rises, angry priests dressed in all black meet to discuss the threat of Jesus of Nazareth to the Jewish people. They sing in low…
+          %span.date Published August 05, 2011
+        %li
+          .articleinfo
+            %h3.headline
+              %a{:href => "article.html"} In The News
+            %span.author -#correct
+              by Anna Beatty
+              %span.animal : American Shorthair
+          %p The dog days of summer have brought more than hot, rainy weather; the past week has seen political, economic, and military turmoil throughout the…
+          %span.date Published August 12, 2011
+        %li
+          .articleinfo
+            %h3
+              %a{:href => "article.html"} Beyond the...Badge: Patrick Bassett
+            %h5
+              by Sanchita Mukherjee
+              %span.animal : Tigress
+          %p During the day, Pine View is home to over 2,000 people. But after students, teachers, administrators, and other staff members leave campus, Pine View's…
+          %span.date Published May 27, 2011
+        %li
+          .articleinfo
+            %h3
+              %a{:href => "article.html"} Beyond the...Golf Cart: James Hawkins
+            %h5
+              by Daysi Gomez
+              %span.animal : Pansy
+          %p To some students, James Hawkins is simply one of the many aides on campus who help make Pine View run like clockwork. To others, he is the guy in…
+          %span.date Published May 27, 2011
+        %li
+          .articleinfo
+            %h3
+              %a{:href => "article.html"} Teams tie in Tie vs. Tie-Dye tug-of-war
+            %h5
+              by John Schweig
+              %span.animal : Three-Toed Sloth
+          %p As they ritually broke with their past on the annual Senior Day Friday, the Class of 2011 literally broke the tug-of-war rope and achieved a first…
+          %span.date Published May 27, 2011
+    .pagination
+      %span.disabled.prev_page « Previous
+      %span.current 1
+      %a{:href => "/search?page=2&q=a", :rel => "next"} 2
+      %a{:href => "/search?page=3&q=a"} 3
+      %a{:href => "/search?page=4&q=a"} 4
+      %a{:href => "/search?page=5&q=a"} 5
+      %a{:href => "/search?page=6&q=a"} 6
+      %a{:href => "/search?page=7&q=a"} 7
+      %a{:href => "/search?page=8&q=a"} 8
+      %a{:href => "/search?page=9&q=a"} 9
+      %span.gap …
+      %a{:href => "/search?page=20&q=a"} 20
+      %a{:href => "/search?page=21&q=a"} 21
+      %a.next_page{:href => "/search?page=2&q=a", :rel => "next"} Next »

@@ -13,7 +13,7 @@ a
   color: #465e99
 
 p
-  font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif
+  font-family: "Adobe Caslon Pro", Georgia, 'Times New Roman', Times, sans-serif
   line-height: 1.4
 
 #wrapper
@@ -109,6 +109,7 @@ p
 #nav
   ul
     overflow-y: scroll
+    overflow-x: hidden
     height: auto
     max-height: 400px
   li
@@ -158,8 +159,20 @@ p
   margin: 0
   float: left
   width: 120px
-  &:focus
-    border-color: #600
+  display: block
+  -ms-box-sizing: content-box
+  -webkit-box-sizing: content-box
+  -moz-box-sizing: content-box
+  box-sizing: content-box
+
+#searchsubmit
+  -ms-box-sizing: content-box
+  -webkit-box-sizing: content-box
+  -moz-box-sizing: content-box
+  box-sizing: content-box
+
+#searchbox:focus
+  border-color: #465e99
 
 #searchsubmit
   width: 36px
@@ -170,6 +183,7 @@ p
   padding: 5px 0
   float: left
   background-color: #fff
+  display: block
 
 #ad
   position: absolute
@@ -348,7 +362,7 @@ p
     height: auto
     float: none
     display: block
-    div
+    div!
     ul.list li
       width: 380px
       height: auto
@@ -395,7 +409,7 @@ p
 
 #content .story
   margin-top: 26px
-  font-size: 16px
+  font-size: 18px
   h2
     font-weight: bold
     font-size: 42px
@@ -592,7 +606,7 @@ p
   color: #fff
   clear: both
 
-.storypage #foot
+.storypage! #foot
 
 #foot h6
   margin-bottom: 20px
